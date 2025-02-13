@@ -39,7 +39,7 @@ services:
     container_name: ragflow-infinity
     profiles:
       - infinity
-    image: docker.m.daocloud.io/infiniflow/infinity:v0.6.0-dev3
+    image: docker.1ms.run/infiniflow/infinity:v0.6.0-dev3
     volumes:
       - infinity_data:/var/infinity
       - ./infinity_conf.toml:/infinity_conf.toml
@@ -68,7 +68,7 @@ services:
 
   mysql:
     # mysql:5.7 linux/arm64 image is unavailable.
-    image: docker.m.daocloud.io/mysql:8.0.39
+    image: docker.1ms.run/mysql:8.0.39
     container_name: ragflow-mysql
     env_file: .env
     environment:
